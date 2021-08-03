@@ -1,0 +1,31 @@
+#division_principal_Index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: stretch;
+    border: black;
+}
+
+body {
+    background-image: url('../images/fondos/—Pngtree—a\ pink\ shopping\ center_4840445.png');
+
+    background-size: cover;
+}
+
+#division_principal_Productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: stretch;
+    border: black;
+}
+
+#carrusel_1{
+    background-image: url('../images/fulls/12.jpg');
+}

@@ -1,0 +1,26 @@
+body {
+    background-image: url('../images/fondos/—Pngtree—a\ pink\ shopping\ center_4840445.png');
+
+    background-size: cover;
+}
+
+
+.botones {
+    color:white;width: 30%; 
+    align-self:center; 
+    margin: 15px;
+    border-radius:4px; 
+    background:linear-gradient(135deg, #6e8efb, #a777e3);
+    margin: 10px; 
+    height: 50px;
+    width: 400px; 
+    text-decoration: dotted;
+    font-size: larger;
+}
+
+.form-label {
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+

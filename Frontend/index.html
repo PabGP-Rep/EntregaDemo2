@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Mi tiendita</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="./images/thumbs/shopping-cart-20392.png">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/dist/css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Mi tiendita</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a id="perfil_activo" class="nav-link" href="#">Mi perfil</a>
+              </li>
+              <li class="nav-item">
+                <a id="facturacionindex" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Facturación</a>
+              </li>
+              
+              
+              <li class="nav-item">
+                <a id="salirindex" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Salir</a>
+              </li>
+              <li class="nav-item">
+                <p id="categoriasAdmin" class="nav-link" href="" aria-disabled="true" >Categorias</p>
+              </li>
+              <li class="nav-item">
+                <p id="productosAdmin" class="nav-link" href="#" aria-disabled="true" >Productos</p>
+              </li>
+              <li class="nav-item">
+                <p id="usuarioactivado" class="nav-link" href="#" aria-disabled="true" disabled = 'disabled'>Bienvenido</p>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" id="search-input" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="reset" id="search-button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg id="carrusel_1" width="100%" height="100%" >
+              <rect width="100%" height="100%" fill="#777" />
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <div style="text-align: center;">
+                  <img id="imagencar0" width="250px" height="230px" style="margin: 15px;">
+                  <h1 id="carusel0">Example headline.</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#777" />
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <div style="text-align: center;">
+                  <img id="imagencar1" width="250px" height="230px" style="margin: 15px;">
+                  <h1 id="carusel1">Another example headline.</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="300%" height="300%" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#777" />
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <div style="text-align: center;">
+                  <img id="imagencar2" width="250px" height="230px" style="margin:15px">
+                  <h1 id='carusel2'>One more for good measure.</h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </main>
+    <div id="division_principal_Index">
+    </div>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

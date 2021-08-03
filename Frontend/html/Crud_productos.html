@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Mi tiendita</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../images/thumbs/shopping-cart-20392.png" alt="" width="59" height="44">
+      <h2 id="titulo_perfil">Productos</h2>
+    </div>
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-consultar-tab" data-bs-toggle="pill" data-bs-target="#pills-consultar" type="button" role="tab" aria-controls="pills-consultar" aria-selected="true">Consultar</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-registrar-tab" data-bs-toggle="pill" data-bs-target="#pills-registrar" type="button" role="tab" aria-controls="pills-registrar" aria-selected="false">Registrar</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-actualizar-tab" data-bs-toggle="pill" data-bs-target="#pills-actualizar" type="button" role="tab" aria-controls="pills-actualizar" aria-selected="false">Actualizar</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-eliminar-tab" data-bs-toggle="pill" data-bs-target="#pills-eliminar" type="button" role="tab" aria-controls="pills-eliminar" aria-selected="false">Eliminar</button>
+      </li>
+    </ul>
+    
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-consultar" role="tabpanel" aria-labelledby="pills-home-tab">
+        <table class="table table-light table-bordered table-striped table-hover ">
+          <thead class="table-dark">
+            <tr style="text-align: center;">
+              <th scope="col" style="width: 10%;">Id Producto</th>
+              <th scope="col" style="width: 10%;">Id Categoria</th>
+              <th scope="col" style="width: 25%;">Nombre</th>
+              <th scope="col" style="width: 20%;">Precio</th>
+              <th scope="col" >Imagen</th>                
+            </tr>
+          </thead>
+          <tbody id="contenido-tabla" style="text-align: center;">
+          </tbody>
+        </table>
+        <button class="btn btn-dark" type="button" role="button" style="margin-bottom: 15px;" id="boton-consultar">Consultar</button>
+      </div>
+
+      <div class="tab-pane fade" id="pills-registrar" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-2">
+              <label  for="firstName" class="form-label">Id de Categoria</label>
+              <input id="idcategoria1" type="text" class="form-control"  placeholder="" value="" required> 
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Nombre</label>
+              <input id="nombre1" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+            
+            <div class="col-sm-2">
+              <label for="lastName" class="form-label">Precio</label>
+              <input id="precio1" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+
+            <div class="col-sm-4">
+              <label for="lastName" class="form-label">Imagen</label>
+              <input id="imagen1" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+          </div>
+
+          <button class="btn btn-success" style="margin-bottom: 15px; margin-top: 10px;" id="boton-registrar"  type="button">Registrar</button>          
+        </form>
+      </div>
+
+      <div class="tab-pane fade" id="pills-actualizar" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-sm-2">
+              <label  for="firstName" class="form-label">Id de Producto</label>
+              <input id="idproducto2" type="text" class="form-control"  placeholder="" value="" required> 
+            </div>
+
+            <div class="col-sm-2">
+              <label  for="firstName" class="form-label">Id de Categoria</label>
+              <input id="idcategoria2" type="text" class="form-control"  placeholder="" value="" required> 
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Nombre</label>
+              <input id="nombre2" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+            
+            <div class="col-sm-2">
+              <label for="lastName" class="form-label">Precio</label>
+              <input id="precio2" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Imagen</label>
+              <input id="imagen2" type="text" class="form-control"  placeholder="" value="" >
+            </div>    
+          </div>
+          
+          <button class="btn btn-warning" style="margin-bottom: 15px; margin-top: 10px;" id="boton-actualizar"  type="button">Actualizar</button>          
+        </form>
+      </div>
+
+      <div class="tab-pane fade" id="pills-eliminar" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-sm-2">
+              <label  for="firstName" class="form-label">Id de Producto</label>
+              <input id="idproducto3" type="text" class="form-control"  placeholder="" value="" required> 
+            </div>
+
+            <div class="col-sm-2">
+              <label  for="firstName" class="form-label">Id de Categoria</label>
+              <input id="idcategoria3" type="text" class="form-control"  placeholder="" value="" required> 
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Nombre</label>
+              <input id="nombre3" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+            
+            <div class="col-sm-2">
+              <label for="lastName" class="form-label">Precio</label>
+              <input id="precio3" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Imagen</label>
+              <input id="imagen3" type="text" class="form-control"  placeholder="" value="" >
+            </div>                    
+          </div>  
+          <button class="btn btn-danger" style="margin-bottom: 15px; margin-top: 10px;" id="boton-eliminar"  type="button">Eliminar</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <a class="btn btn-primary" href="../index.html" type="button" >VOLVER</a>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/dist/js/form-validation.js"></script>
+    <script src="../js/validaciones.js"></script>
+    <script src="../js/crud_productos.js"></script>
+  </body>
+</html>

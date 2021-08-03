@@ -1,0 +1,96 @@
+body {
+    background-image: url('../images/fondos/—Pngtree—a\ pink\ shopping\ center_4840445.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {	
+	margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+.wrapper.form-sigin {
+    display: flex;
+
+}
+
+.form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);  
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.heading_class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-signin-heading {
+    margin-bottom: 30px;
+    text-align: center;
+    justify-self: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.checkbox {
+	  margin-bottom: 30px;
+}
+
+.checkbox {
+    font-weight: normal;
+    }
+
+.form-control {
+
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#imagen_carrito {
+
+    height: 10%;
+    width: 15%;
+}
+
+.btn-lg {
+    font-size: large;
+}
+
+.botones {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#boton_entrar_login {
+    height: 50px;
+    width: 100px;
+    font-size: large;
+}

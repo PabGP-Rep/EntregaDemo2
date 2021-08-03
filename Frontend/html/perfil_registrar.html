@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Mi tiendita</title>
+    <link rel="icon" type="image/x-icon" href="../images/thumbs/shopping-cart-20392.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../images/thumbs/shopping-cart-20392.png" alt="" width="72" height="57">
+      <h2 id="titulo_perfil">Registrate</h2>
+      <p class="lead" id="saludo_cliente">¡Bienvenido a Mi tiendita!</p>
+    </div>
+      <div class="col-md-7 col-lg-8">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label  for="firstName" class="form-label">Primer nombre</label>
+              <input id="nombre1" type="text" class="form-control"  placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Nos falta tu nombre
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Segundo nombre<span class="text-muted">(Optional)</span></label>
+              <input id="nombre2" type="text" class="form-control"  placeholder="" value="" >
+            </div>
+
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Apellido paterno</label>
+              <input id="apellido1" type="text" class="form-control"  placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Nos falta tu apellido
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Apellido materno</label>
+              <input id="apellido2" type="text" class="form-control" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Nos falta tu apellido
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                  Nos falta tu nombre de usuario
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password </label>
+              <input type="text" class="form-control" id="password" placeholder="secreto..." required autocomplete="off">
+              <div class="invalid-feedback">
+                Nos falta tu contraseña para acceder al sitio
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección propia</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Calle..." required>
+              <div class="invalid-feedback">
+                Nos falta el lugar en donde vives
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Dirección de envío </label>
+              <input type="text" class="form-control" id="envios" placeholder="Calle..." required>
+              <div class="invalid-feedback">
+                Nos falta el lugar para enviarte tus productos
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">País</label>
+              <select class="form-select" id="country" required>
+                <option value="" disabled>Tu país...</option>
+              </select>
+              <div class="invalid-feedback">
+                Nos falta el país en donde vivese
+              </div>
+            </div>
+          </div>
+
+ 
+          <h4 class="mb-3">Opciones de pago</h4>
+
+          <div class="my-3">
+            <div class="col-md-5">
+              <select class="form-select" id="OpcionPago" required>
+                <option value="" disabled>Tipo de pago</option>
+                <option value="Crédito" >Tarjeta de Crédito</option>
+                <option value="Débito">Tarjeta de Débito</option>
+                <option value="Paypal">Paypal</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nombre del propietario</label>
+              <input type="text" class="form-control" id="propietario" placeholder="" required autocomplete="off">
+              <small class="text-muted">Nombre completo</small>
+              <div class="invalid-feedback">
+                Nos falta el nombre en tu tarjeta
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número de tarjeta</label>
+              <input type="text" class="form-control" id="tarjeta" placeholder="" required autocomplete="off">
+              <div class="invalid-feedback">
+                Nos falta el número de tu tarjeta
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Caducidad</label>
+              <input type="text" class="form-control" id="caducidad" placeholder="" required autocomplete="off">
+              <div class="invalid-feedback">
+                Nos falta la fecha de caducidad
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                PIN de seguridad requerido
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+          <h4 class="mb-3">Contacto</h4>
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="mail" placeholder="" required autocomplete="off">
+            <div class="invalid-feedback">
+              Nos falta tu correo
+            </div>
+          </div>
+          <div class="col-md-3" style="margin-bottom: 10px;">
+            <label for="cc-expiration" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="telefono" placeholder="" autocomplete="off">
+            <div class="invalid-feedback">
+            </div>
+          </div>
+
+          <button class="botones" style="margin-bottom: 15px;" id="boton-registrar"  type="button">Registrarme</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets/dist/js/form-validation.js"></script>
+    <script src="../js/registrar.js" type="module"></script>
+  </body>
+</html>
